@@ -3,7 +3,9 @@ import Component from './Component.js';
 class Header extends Component {
     renderTemplate() {
         return /*html*/`
-            <header id="header">TO DO LIST</header>
+            <header id="header">
+                <h1>TO DO LIST</h1>
+            </header>
         `;
     }
 }

@@ -33,10 +33,8 @@ class App extends Component {
 
     renderTemplate() {
         return /*html*/`
-            <div id="app">
+            <div>
                 <main>
-                    <ul id="lists">
-                    </ul>
                 </main>
             </div>
         `;
