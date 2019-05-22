@@ -1,0 +1,29 @@
+/* @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Poiret+One&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Megrim|Wire+One&display=swap');
+
+body {
+    font-family: 'Wire One', sans-serif;
+    background-color: #FBFBF9;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: 'Megrim', cursive;
+    color: #494E4D;
+}
+
+section {
+    height: 550px;
+    width: 650px; 
+}
+
+div {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(87, 104, 101, .7);
+    color: #FBFBF9;
+}
