@@ -19,6 +19,7 @@ header {
 h1 {
     font-size: 1.4em;
     text-shadow: 2px 2px 10px rgb(248, 246, 244);
+    padding: 20px;
 }
 
 #app {
@@ -34,12 +35,14 @@ li {
     height: 50px;
     width: 350px; 
     align-items: center;
+    background-color: rgba(87, 104, 101, .5);
+    margin-right: 32px;
 }
 
 form {
     display: flex;
     justify-content: center;
-    margin-bottom: -25px;
+    margin-top: -10px;
 }
 input {
     height: 50px;
