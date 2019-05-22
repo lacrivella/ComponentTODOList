@@ -50,15 +50,21 @@ input {
     background-color: #FBFBF9;
     border: none;
 }
-
-button {
+button{
     background-color: transparent;
     border: none;
-    color: #FBFBF9;
-    text-shadow: 2px 2px 10px #494E4D;
+    color: #FBFBF9;  
+}
+
+#adding {
     font-size: 1em;
+    text-shadow: 2px 2px 10px #494E4D;
     cursor: pointer;
 }
+
+ #remove {
+    margin-bottom: 15px;
+ }
 
 button:hover {
     transform: scale(1.5);

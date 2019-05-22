@@ -28,7 +28,7 @@ class AddTodo extends Component {
         return /*html*/ `
             <form>
             <label><input name="task"></label>
-            <button>&#10753;</button>
+            <button id="adding">&#10753;</button>
             </form>
         `;
     }

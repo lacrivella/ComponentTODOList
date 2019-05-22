@@ -22,11 +22,19 @@ class App extends Component {
         const addToDoDOM = addToDo.render();
         main.appendChild(addToDoDOM);
         
-        const todoList = new TodoList({ todos });
+        const todoList = new TodoList ({ 
+            todos,
+            onRemove: (todoToRemove) => {
+                const index = todos.indexOf(todoToRemove);
+                todos.splice(index, 1);
+
+                todoList.update({ todos });
+            }
+        
+        });
+
         const todolistDOM = todoList.render();
         main.appendChild(todolistDOM);
-
-
 
         return dom;
     }
