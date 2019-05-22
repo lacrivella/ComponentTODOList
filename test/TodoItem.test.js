@@ -1,21 +1,4 @@
-import Component from '../src/component/Component.js';
-
-class ToDoItem extends Component {
-    renderTemplate() {
-        const todo = this.props.todo;
-        let checked = '';
-    
-        if(todo.completed) {
-            checked = 'checked';
-        }
-        return /*html*/`
-            <li>
-                <input type="checkbox"${checked}>
-                <label>${todo.task}</label>
-            </li>  
-        `;
-    }
-}
+import ToDoItem from '../src/component/TodoItem.js';
 
 const test = QUnit.test;
 QUnit.module('To Do List');
@@ -34,7 +17,6 @@ test('testing to do list template', assert => {
             <label>Catch up on Podcasts</label>
         </li>  
     `;
-
 
     //Act 
     // Call the function you're testing and set the result to a const
