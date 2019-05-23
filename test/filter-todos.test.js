@@ -18,13 +18,21 @@ const todos = [
 
 function filterTodo(todos, filter) {
     const text = filter.text.toLowerCase();
+    const radioButton = filter.completed.toString();
+    
     return todos.filter(todo => {
 
         const task = todo.task.toLowerCase();
+        const taskCompleted = todo.completed.toString();
 
-        const hasText = task.includes(text);
+        let completedCompare = taskCompleted.includes(radioButton);
+        if(radioButton === 'all') {
+            completedCompare = true;
+        }
+
+        const hasText = !task || task.includes(text);
         
-        return hasText;
+        return hasText && completedCompare;
 
     });
 }
@@ -101,6 +109,30 @@ test('All returns all', assert => {
     {
         task: 'Volunteer at Art Galleries',
         completed: false
+    },
+    {
+        task: 'Keep It to Game of Thrones',
+        completed: true
+    }]);
+});
+
+test('completed returns completed', assert => {
+    //Arrange
+    // Set up your parameters and expectations
+    const filter = {
+        text: '',
+        completed: true,
+    };
+
+    const filtered = filterTodo(todos, filter);
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    //Assert
+    assert.deepEqual(filtered, [{
+        task: 'Catch up on Podcasts',
+        completed: true
     },
     {
         task: 'Keep It to Game of Thrones',
