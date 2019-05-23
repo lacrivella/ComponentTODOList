@@ -15,6 +15,7 @@ test('testing to do list template', assert => {
         <li>
             <input type="checkbox"checked>
             <label>Catch up on Podcasts</label>
+            <button id="remove">&#9721;</button>
         </li>  
     `;
 
