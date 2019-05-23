@@ -140,3 +140,24 @@ test('completed returns completed', assert => {
     }]);
 });
 
+test('Not Done returns not completed', assert => {
+    //Arrange
+    // Set up your parameters and expectations
+    const filter = {
+        text: '',
+        completed: false,
+    };
+
+    const filtered = filterTodo(todos, filter);
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    //Assert
+    assert.deepEqual(filtered, [{
+        task: 'Volunteer at Art Galleries',
+        completed: false
+    }]);
+});
+
+
