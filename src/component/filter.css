@@ -1,4 +1,9 @@
-.filter {
+div.filter-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.text {
     padding: 10px;
     height: 10px;
     width: 100px;
@@ -9,9 +14,11 @@
 .filter-section::before {
     content: '⌕';
     margin-left: 15px;
+    margin-right: 5px;
 }
 
 .radio-button {
     font-family: 'Megrim', cursive;
     font-size: .5em;
+    margin-right: 15px;
 }
