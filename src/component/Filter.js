@@ -3,6 +3,8 @@ import Component from './Component.js';
 class Filter extends Component {
     render() {
         const dom = this.renderDOM();
+        const form = dom.querySelector('form');
+        console.log(form);
         // const text = dom.querySelector('#text');
         // const all = dom.querySelector('#all');
         // const completed = dom.querySelector('#completed');
@@ -26,14 +28,16 @@ class Filter extends Component {
 
     renderTemplate() {
         return /*html*/ `
-            <div class="filter-section">
+            <section>
+            <form class="filter-section">
                 <input id="text" name="filter">
                 <label class="radio-button">
-                    <input type="radio" name="radio" id="all" value="all"> All
-                    <input type="radio" name="radio" id="completed" value="true"> Completed
-                    <input type="radio" name="radio" id="none" value="false"> Not Done
+                    <input type="radio" name="status" id="all" value="all"> All
+                    <input type="radio" name="status" id="completed" value="true"> Completed
+                    <input type="radio" name="status" id="none" value="false"> Not Done
                 </label>
-            </div>
+            </form>
+            </section>
         `;
     }
 }

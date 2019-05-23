@@ -12,6 +12,7 @@ class ToDoList extends Component {
             const todoItem = new ToDoItem({ todo, onRemove });
             const todoItemDOM = todoItem.render();
             list.appendChild(todoItemDOM);
+        
 
         });
 
