@@ -23,10 +23,6 @@ class App extends Component {
         const addToDoDOM = addToDo.render();
         main.appendChild(addToDoDOM);
 
-        // const filter = New Filter({
-            
-        // });
-        
         const todoList = new TodoList ({ 
             todos,
             onRemove: (todoToRemove) => {
