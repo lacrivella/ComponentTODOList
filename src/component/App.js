@@ -1,6 +1,6 @@
 import Component from './Component.js';
 import Header from './Header.js';
-// import Filter from './Filter.js';
+import Filter from './Filter.js';
 import TodoList from './TodoList.js';
 import todos from '../../data/todo.js';
 import AddTodo from './AddTodo.js';
@@ -22,6 +22,11 @@ class App extends Component {
         });
         const addToDoDOM = addToDo.render();
         main.appendChild(addToDoDOM);
+
+        const filter = new Filter ({
+
+        });
+        main.appendChild(filter.render());
 
         const todoList = new TodoList ({ 
             todos,

@@ -1,4 +1,17 @@
 .filter {
     padding: 10px;
-    border: 1px solid black;
+    height: 10px;
+    width: 100px;
+    display: inline-block;
+    margin: auto;
+}
+
+.filter-section::before {
+    content: '⌕';
+    margin-left: 15px;
+}
+
+.radio-button {
+    font-family: 'Megrim', cursive;
+    font-size: .5em;
 }
