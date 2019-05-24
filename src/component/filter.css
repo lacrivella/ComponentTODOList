@@ -1,4 +1,35 @@
-.filter {
+.text {
     padding: 10px;
-    border: 1px solid black;
+    height: 10px;
+    width: 100px;
+    margin: auto;
+}
+
+.filter-section::before {
+    content: '⌕';
+    margin-right: 5px;
+}
+
+.radio-button {
+    font-family: 'Megrim', cursive;
+    font-size: .1em;
+    margin-right: 15px;
+}
+
+#text {
+    align-content: center;  
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.test {
+    display: flex;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
 }

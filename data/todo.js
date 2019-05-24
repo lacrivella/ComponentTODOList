@@ -1,7 +1,7 @@
 const todos = [
     {
         task: 'Catch up on Podcasts',
-        completed: true
+        completed: false
     },
     {
         task: 'Volunteer at Art Galleries',
@@ -9,11 +9,11 @@ const todos = [
     },
     {
         task: 'Keep It to Game of Thrones',
-        completed: true
+        completed: false
     },
     {
         task: 'Complain to Noah about Eurovision',
-        completed: true
+        completed: false
     },
     {
         task: 'Win Eurovision',
@@ -25,7 +25,7 @@ const todos = [
     },
     {
         task: 'Pet all the Dogs',
-        completed: true
+        completed: false
     }
 ];
 
