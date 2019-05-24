@@ -160,4 +160,23 @@ test('Not Done returns not completed', assert => {
     }]);
 });
 
+test('Combo Filter string and completed', assert => {
+    //Arrange
+    // Set up your parameters and expectations
+    const filter = {
+        text: 'cat',
+        completed: true,
+    };
+
+    const filtered = filterTodo(todos, filter);
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    //Assert
+    assert.deepEqual(filtered, [{
+        task: 'Catch up on Podcasts',
+        completed: true
+    }]);
+});
 
