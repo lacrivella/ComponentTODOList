@@ -13,7 +13,7 @@ test('testing to do list template', assert => {
 
     const expected = /*html*/`
         <li>
-            <input type="checkbox"checked>
+            <input type="checkbox" name="checkbox" checked>
             <label>Catch up on Podcasts</label>
             <button id="remove">&#9721;</button>
         </li>  

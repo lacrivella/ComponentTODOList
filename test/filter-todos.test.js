@@ -22,7 +22,7 @@ test('testing string filters;', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: 'Catch',
+        task: 'Catch',
         completed: '',
     };
 
@@ -43,7 +43,7 @@ test('No strings return all', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: '',
+        task: '',
         completed: '',
     };
 
@@ -71,7 +71,7 @@ test('All returns all', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: '',
+        task: '',
         completed: '',
     };
 
@@ -99,7 +99,7 @@ test('completed returns completed', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: '',
+        task: '',
         completed: true,
     };
 
@@ -123,7 +123,7 @@ test('Not Done returns not completed', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: '',
+        task: '',
         completed: false,
     };
 
@@ -143,7 +143,7 @@ test('Combo Filter string and completed', assert => {
     //Arrange
     // Set up your parameters and expectations
     const filter = {
-        text: 'cat',
+        task: 'cat',
         completed: true,
     };
 
