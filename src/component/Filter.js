@@ -21,11 +21,17 @@ class Filter extends Component {
             <section>
             <form class="filter-section">
                 <input id="text" name="text-filter">
-                <label class="radio-button">
-                    <input type="radio" name="status" id="all" value="all"> All
-                    <input type="radio" name="status" id="completed" value="true"> Completed
-                    <input type="radio" name="status" id="none" value="false"> Not Done
-                </label>
+                    <div class="test">
+                    <label>
+                        <input type="radio" name="status" id="all" value="all"> All
+                     </label>
+                     <label>
+                        <input type="radio" name="status" id="completed" value="true"> Completed
+                    </label>
+                    <label>
+                        <input type="radio" name="status" id="not" value="false"> Not Done
+                    </label>
+                    </div>
             </form>
             </section>
         `;
